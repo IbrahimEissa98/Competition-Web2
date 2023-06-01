@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibrahim Eissa / Shop</title>
+    <link rel="stylesheet" href="shop-style.css">
+    <link rel="shortcut icon" href="images/I E shop.jpg" >
+    <!-- Using fontawesome icons -->
+    <script src="https://kit.fontawesome.com/26be7d0557.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="back-to-top">
+        <a href="#site-beginning"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
+    <header id="site-beginning">
+        <div class="header-items">
+            <form action="#" class="search-bar" method="get">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" class="search-input" placeholder="Search">
+            </form>
+            <div class="site-name">
+                <a href="index.html">IBRAHIM EISSA</a>
+            </div>
+            <div class="right-icons">
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a class="cart-anchor" href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p class="number">3</p>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="nav-items">
+            <li class="list1">
+                <a href="index.html">
+                    <p>HOME</p>
+                    <i class="fa-solid fa-angle-up fa-rotate-180"></i>
+                </a>
+            </li>
+            <li class="list2">
+                <a href="about.html">
+                    <p>ABOUT</p>
+                    <i class="fa-solid fa-angle-up fa-rotate-180"></i>
+                </a>
+            </li>
+            <li class="shop">
+                <a href="shop.html">SHOP</a>
+            </li>
+            <li>
+                <a href="#">CATALOGUE</a>
+            </li>
+            <li>
+                <a href="#">NEW ARRIVALS</a>
+            </li>
+            <li>
+                <a href="#">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- map -->
+    <div class="nav-map">
+        <div class="nav-map-container">
+            <p>
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <strong>Shop</strong>
+            </p>
+        </div>
+    </div>
+
+    <!-- shop all 2 sections -->
+    <section class="shop-all-2-sections">
+        <div class="shop-all-container">
+            <aside class="aside-left">
+                <div class="categories">
+                    <h4>CATEGORIES</h4>
+                    <ul>
+                        <li>
+                            <a href="#">Men</a>
+                            <p>(2,100)</p>
+                        </li>
+                        <li>
+                            <a href="#">Women</a>
+                            <p>(2,600)</p>
+                        </li>
+                        <li>
+                            <a href="#">Children</a>
+                            <p>(1,850)</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter">
+                    <div class="by-price">
+                        <h4>FILTER BY PRICE</h4>
+                        <div class="range-input range1">
+                            <p>From</p>
+                            <input type="range" min="0" max="250" name="from">
+                        </div>
+                        <div class="range-input range2">
+                            <p>To</p>
+                            <input type="range" min="251" max="500" name="to">
+                        </div>
+                        <p class="amount-range">$150 - $250</p>
+                    </div>
+                    <div class="by-size">
+                        <h4>SIZE</h4>
+                        <div class="size-types">
+                            <input type="checkbox" name="small" id="small">
+                            <label for="small">Small</label>
+                            <p>(2,310)</p>
+                        </div>
+                        <div class="size-types">
+                            <input type="checkbox" name="medium" id="medium">
+                            <label for="medium">Medium</label>
+                            <p>(1,250)</p>
+                        </div>
+                        <div class="size-types">
+                            <input type="checkbox" name="large" id="large">
+                            <label for="large">Large</label>
+                            <p>(1,460)</p>
+                        </div>
+                    </div>
+                    <div class="by-color">
+                        <h4>COLOR</h4>
+                        <div class="single-color">
+                            <a href="#">
+                                <i class="fa-solid fa-circle" style="color: red;"></i>
+                                <p class="color-name">Red</p>
+                                <p>(2,630)</p>
+                            </a>
+                        </div>
+                        <div class="single-color">
+                            <a href="#">
+                                <i class="fa-solid fa-circle" style="color: green;"></i>
+                                <p class="color-name">Green</p>
+                                <p>(2,290)</p>
+                            </a>
+                        </div>
+                        <div class="single-color">
+                            <a href="#">
+                                <i class="fa-solid fa-circle" style="color: blue;"></i>
+                                <p class="color-name">Blue</p>
+                                <p>(1,780)</p>
+                            </a>
+                        </div>
+                        <div class="single-color">
+                            <a href="#">
+                                <i class="fa-solid fa-circle" style="color: purple;"></i>
+                                <p class="color-name">purple</p>
+                                <p>(1,210)</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <section class="shop-all-items">
+                <div class="head-of-shop-all">
+                    <h3>Shop All</h3>
+                    <div class="right-lists">
+                        <div class="latest-list menu">
+                            <button>
+                            LATEST 
+                            <i class="fa-solid fa-angle-down"></i>
+                            <div class="dropdown-content">
+                                <a href="#">Men</a>
+                                <a href="#">Women</a>
+                                <a href="#">Children</a>
+                            </div>
+                            </button>
+                        </div>
+                        <div class="reference-list menu">
+                            <button>
+                                REFERENCE 
+                                <i class="fa-solid fa-angle-down"></i>
+                                <div class="dropdown-content">
+                                    <a href="#">Relevance</a>
+                                    <a href="#">Name,A to Z</a>
+                                    <a href="#">Name,Z to A</a>
+                                    <div class="line"></div>
+                                    <a href="#">Price,low to high</a>
+                                    <a href="#">price,high to low</a>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-all-products">
+                    <div class="products-row">
+                        <div class="item1">
+                            <a href="product-shirt.html">
+                                <img src="images/cloth_1.jpg" alt="tank top">
+                                <div class="discription">
+                                    <p class="p1"><a href="product-shirt.html">Tank Top</a></p>
+                                    <p class="p2">Finding perfect t-shirt</p>
+                                    <p class="p3"><sup>$</sup>20</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item1">
+                            <a href="product-shirt.html">
+                                <img src="images/shoe_1.jpg" alt="tank top">
+                                <div class="discription">
+                                    <p class="p1"><a href="product-shirt.html">Corater</a></p>
+                                    <p class="p2">Finding perfect shoes</p>
+                                    <p class="p3"><sup>$</sup>35</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item1">
+                            <a href="product-shirt.html">
+                                <img src="images/cloth_2.jpg" alt="tank top">
+                                <div class="discription">
+                                    <p class="p1"><a href="product-shirt.html">Polo Shirt</a></p>
+                                    <p class="p2">Finding perfect t-shirt</p>
+                                    <p class="p3"><sup>$</sup>25</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="products-row">
+                        <div class="item1">
+                            <a href="product-shirt.html">
+                                <img src="images/shoe_1.jpg" alt="tank top">
+                                <div class="discription">
+                                    <p class="p1"><a href="product-shirt.html">Corater</a></p>
+                                    <p class="p2">Finding perfect shoes</p>
+                                    <p class="p3"><sup>$</sup>35</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item1">
+                            <a href="product-shirt.html">
+                                <img src="images/cloth_2.jpg" alt="tank top">
+                                <div class="discription">
+                                    <p class="p1"><a href="product-shirt.html">Polo Shirt</a></p>
+                                    <p class="p2">Finding perfect t-shirt</p>
+                                    <p class="p3"><sup>$</sup>25</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item1">
+                            <a href="product-shirt.html">
+                                <img src="images/cloth_3.jpg" alt="tank top">
+                                <div class="discription">
+                                    <p class="p1"><a href="product-shirt.html">T-Shirt Mockup</a></p>
+                                    <p class="p2">Finding perfect t-shirt</p>
+                                    <p class="p3"><sup>$</sup>20</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="products-row">
+                        <div class="item1">
+                            <a href="product-shirt.html">
+                                <img src="images/cloth_3.jpg" alt="tank top">
+                                <div class="discription">
+                                    <p class="p1"><a href="product-shirt.html">T-Shirt Mockup</a></p>
+                                    <p class="p2">Finding perfect t-shirt</p>
+                                    <p class="p3"><sup>$</sup>20</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item1">
+                            <a href="product-shirt.html">
+                                <img src="images/shoe_1.jpg" alt="tank top">
+                                <div class="discription">
+                                    <p class="p1"><a href="product-shirt.html">Corater</a></p>
+                                    <p class="p2">Finding perfect shoes</p>
+                                    <p class="p3"><sup>$</sup>35</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item1">
+                            <a href="product-shirt.html">
+                                <img src="images/cloth_1.jpg" alt="tank top">
+                                <div class="discription">
+                                    <p class="p1"><a href="product-shirt.html">Tank Top</a></p>
+                                    <p class="p2">Finding perfect t-shirt</p>
+                                    <p class="p3"><sup>$</sup>20</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="products-row">
+                        <div class="item1">
+                            <a href="product-shirt.html">
+                                <img src="images/shoe_1.jpg" alt="tank top">
+                                <div class="discription">
+                                    <p class="p1"><a href="product-shirt.html">Corater</a></p>
+                                    <p class="p2">Finding perfect shoes</p>
+                                    <p class="p3"><sup>$</sup>35</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item1">
+                            <a href="product-shirt.html">
+                                <img src="images/cloth_1.jpg" alt="tank top">
+                                <div class="discription">
+                                    <p class="p1"><a href="product-shirt.html">Tank Top</a></p>
+                                    <p class="p2">Finding perfect t-shirt</p>
+                                    <p class="p3"><sup>$</sup>20</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item1">
+                            <a href="product-shirt.html">
+                                <img src="images/cloth_3.jpg" alt="tank top">
+                                <div class="discription">
+                                    <p class="p1"><a href="product-shirt.html">T-Shirt Mockup</a></p>
+                                    <p class="p2">Finding perfect t-shirt</p>
+                                    <p class="p3"><sup>$</sup>20</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="products-row">
+                        <div class="item1">
+                            <a href="product-shirt.html">
+                                <img src="images/cloth_3.jpg" alt="tank top">
+                                <div class="discription">
+                                    <p class="p1"><a href="product-shirt.html">T-Shirt Mockup</a></p>
+                                    <p class="p2">Finding perfect t-shirt</p>
+                                    <p class="p3"><sup>$</sup>20</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item1">
+                            <a href="product-shirt.html">
+                                <img src="images/cloth_2.jpg" alt="tank top">
+                                <div class="discription">
+                                    <p class="p1"><a href="product-shirt.html">Polo Shirt</a></p>
+                                    <p class="p2">Finding perfect t-shirt</p>
+                                    <p class="p3"><sup>$</sup>25</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item1">
+                            <a href="product-shirt.html">
+                                <img src="images/shoe_1.jpg" alt="tank top">
+                                <div class="discription">
+                                    <p class="p1"><a href="product-shirt.html">Corater</a></p>
+                                    <p class="p2">Finding perfect shoes</p>
+                                    <p class="p3"><sup>$</sup>35</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="number-of-page">
+                    <a href="#"><i class="fa-solid fa-angle-up fa-rotate-270"></i></a>
+                    <a href="#" class="page1">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#"><i class="fa-solid fa-angle-up fa-rotate-90"></i></a>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Categories section -->
+    <section class="category-section">
+        <div class="categories-container">
+            <div class="categories-title">
+                <div class="line"></div>
+                <h1>Categories</h1>
+            </div>
+            <div class="all-3-categories">
+                <div class="category1">
+                    <a href="#">
+                        <img src="images/women.jpg" alt="women">
+                        <div class="discription">
+                            <p>COLLECTIONS</p>
+                            <h1>Women</h1>
+                        </div>
+                    </a>
+                </div>
+                <div class="category1">
+                    <a href="#">
+                        <img src="images/children.jpg" alt="Children">
+                        <div class="discription">
+                            <p>COLLECTIONS</p>
+                            <h1>Children</h1>
+                        </div>
+                    </a>
+                </div>
+                <div class="category1">
+                    <a href="#">
+                        <img src="images/men.jpg" alt="Men">
+                        <div class="discription">
+                            <p>COLLECTIONS</p>
+                            <h1>Men</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-4-lists">
+                <div class="footer-navigations">
+                    <h2>Navigations</h2>
+                    <div class="footer-navigations-3-lists">
+                        <ul>
+                            <li><a href="#">Sell online</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="cart.html">Shopping cart</a></li>
+                            <li><a href="#">Store builder</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Mobile commerce</a></li>
+                            <li><a href="#">Dropshipping</a></li>
+                            <li><a href="#">Website development</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Point of sale</a></li>
+                            <li><a href="#">Hardware</a></li>
+                            <li><a href="#">Software</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-promo">
+                    <h2>Promo</h2>
+                    <img src="images/hero_1.jpg" width="100%" alt="shoes">
+                    <a href="#">Finding Your Perfect Shoes</a>
+                    <p>Promo from May 20 - 31, 2023</p>
+                </div>
+                <div class="footer-contact-subscribe">
+                    <div class="contact-info">
+                        <h2>Contact Info</h2>
+                        <address>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p>Kafr Al-Manshi Al-Qibli, Tanta, Gharbia Governorate</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-phone"></i>
+                                    <p>+2 01098813635</p>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    <p>+2 01556120505</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <p>ibrahimqutb112@gmail.com</p>
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                    <div class="subscribe">
+                        <h2>Subscribe</h2>
+                        <form action="#" method="get">
+                            <input class="email-input" type="email" name="email" placeholder="Email" required>
+                            <input class="btn-send" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>
+                    Copyright &#169;2023 All rights reserved | This template is made with
+                    <i class="fa-solid fa-heart"></i>
+                    by <a href="#">Ibrahim Eissa</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

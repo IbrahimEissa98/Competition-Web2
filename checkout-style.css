@@ -1,0 +1,596 @@
+* {
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 10;
+}
+.back-to-top a {
+    font-size: 25px;
+    color: white;
+    background-color: rgba(245, 191, 245, 0.651);
+    border-radius: 50%;
+    padding: 10px;
+}
+.back-to-top a:hover {
+    background-color: rgba(226, 107, 226, 0.651);
+}
+            /* Header */
+header {
+    width: 100%;
+    height: 130px;
+    border-bottom: 1px solid #f3f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-items {
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+}
+.search-bar {
+    width: 33%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.header-items .search-bar i {
+    color: #a7a5a5;
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+.header-items .search-bar .search-input {
+    height: 40px;
+    font-size: 17px;
+    border: none;
+    padding-left: 40px;
+    width: 300px;
+}
+.header-items .search-bar .search-input:focus {
+    outline: none;
+    padding-left: 25px;
+}
+.site-name {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.site-name a {
+    text-decoration: none;
+    color: #636262;
+    border: 2px solid black;
+    padding: 7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+.right-icons {
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.right-icons a {
+    font-size: 18px;
+    margin-left: 20px;
+    color: rgb(155, 152, 152);
+}
+.right-icons a:hover {
+    color: black;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.cart-anchor {
+    position: relative;
+}
+.cart-anchor .number {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    background-color: rgb(212, 46, 212);
+    color: white;
+    font-size: 15px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 3px;
+}
+            /* Nav bar */
+nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-items {
+    display: flex;
+    list-style-type: none;
+}
+.nav-items li a {
+    display: flex;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 15px;
+    color: black;
+}
+.nav-items li a:hover {
+    color: rgb(218, 90, 218);
+}
+
+.nav-items li a i {
+    font-size: 10px;
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+            /* map */
+.nav-map {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(245, 245, 245, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-map-container {
+    width: 1100px;
+}
+.nav-map-container p a {
+    text-decoration: none;
+    color: rgb(218, 90, 218);
+    margin-right: 5px;
+}
+.nav-map-container p a:hover {
+    color: rgb(218, 13, 218);
+}
+.nav-map-container p span {
+    font-size: 17px;
+    color: #636262;
+    margin-right: 5px;
+}
+            /* checkout section */
+.checkout-section {
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e2dfdf;
+}
+.checkout-container {
+    width: 1100px;
+}
+.checkout-container .return-to-login {
+    width: 100%;
+    border: 1px solid #c9c5c5;
+    border-radius: 5px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.checkout-container .return-to-login p {
+    margin-left: 20px;
+    color: #636262;
+    font-size: 17px;
+}
+.checkout-container .return-to-login p a {
+    text-decoration: none;
+    color: rgb(218, 90, 218);
+}
+            /* chechout forms */
+.checkout-container .checkout-forms {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.checkout-container .checkout-forms .billing-form {
+    width: 47%;
+}
+.checkout-container .checkout-forms .billing-form h1 {
+    color: #444343;
+    margin-bottom: 20px;
+}
+.checkout-container .checkout-forms .billing-form form {
+    border: 1px solid #c9c5c5;
+    padding: 40px 30px;
+}
+.checkout-container .checkout-forms .billing-form label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.checkout-container .checkout-forms .billing-form sup {
+    color: red;
+}
+.checkout-container .checkout-forms .billing-form .country select {
+    width: 100%;
+    height: 40px;
+    color: #777474;
+    padding-left: 15px;
+    font-size: 17px;
+    border: 1px solid #c9c5c5;
+    border-radius: 5px;
+}
+.checkout-container .checkout-forms .billing-form .country select:focus {
+    border: none;
+    outline: 1px solid rgb(218, 90, 218);
+}
+.checkout-container .checkout-forms .billing-form .name {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.checkout-container .checkout-forms .billing-form .name div {
+    width: 45%;
+}
+.checkout-container .checkout-forms .billing-form .name div input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #c9c5c5;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 10px;
+    color: #363535;
+}
+.checkout-container .checkout-forms .billing-form .name div input:focus {
+    border: none;
+    outline: 1px solid rgb(218, 90, 218);
+}
+.checkout-container .checkout-forms .billing-form .company {
+    margin-top: 20px;
+}
+.checkout-container .checkout-forms .billing-form .company input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #c9c5c5;
+    border-radius: 5px;
+    font-size: 17px;
+    padding-left: 10px;
+    color: #363535;
+}
+.checkout-container .checkout-forms .billing-form .company input:focus {
+    border: none;
+    outline: 1px solid rgb(218, 90, 218);
+}
+.checkout-container .checkout-forms .billing-form .address {
+    margin-top: 20px;
+}
+.checkout-container .checkout-forms .billing-form .address input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #c9c5c5;
+    border-radius: 5px;
+    font-size: 17px;
+    padding-left: 10px;
+    color: #363535;
+    margin-bottom: 10px;
+}
+.checkout-container .checkout-forms .billing-form .address input:focus {
+    border: none;
+    outline: 1px solid rgb(218, 90, 218);
+}
+.checkout-container .checkout-forms .billing-form .state-zip {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.checkout-container .checkout-forms .billing-form .state-zip div {
+    width: 45%;
+}
+.checkout-container .checkout-forms .billing-form .state-zip div input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #c9c5c5;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 10px;
+    color: #363535;
+}
+.checkout-container .checkout-forms .billing-form .state-zip div input:focus {
+    border: none;
+    outline: 1px solid rgb(218, 90, 218);
+}
+.checkout-container .checkout-forms .billing-form .email-phone {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.checkout-container .checkout-forms .billing-form .email-phone div {
+    width: 45%;
+}
+.checkout-container .checkout-forms .billing-form .email-phone div input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #c9c5c5;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 10px;
+    color: #363535;
+}
+.checkout-container .checkout-forms .billing-form .email-phone div input:focus {
+    border: none;
+    outline: 1px solid rgb(218, 90, 218);
+}
+.checkout-container .checkout-forms .billing-form .checkbox-2 {
+    margin-top: 40px;
+}
+.checkout-container .checkout-forms .billing-form .checkbox-2 div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.checkout-container .checkout-forms .billing-form .checkbox-2 div label {
+    margin-left: 10px;
+    margin-top: 7px;
+}
+.checkout-container .checkout-forms .billing-form .order-note {
+    margin-top: 40px;
+}
+.checkout-container .checkout-forms .billing-form .order-note textarea {
+    padding: 20px;
+    font-size: 17px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #c9c5c5;
+}
+.checkout-container .checkout-forms .billing-form .order-note textarea:focus {
+    border: none;
+    outline: 1px solid rgb(218, 90, 218);
+}
+.checkout-container .checkout-forms .coupon-and-order {
+    width: 47%;
+}
+.checkout-container .checkout-forms .coupon-and-order h1 {
+    color: #444343;
+    margin-bottom: 20px;
+}
+.checkout-container .checkout-forms .coupon-and-order .coupon-container {
+    border: 1px solid #c9c5c5;
+    padding: 40px 50px;
+}
+.checkout-container .checkout-forms .coupon-and-order .coupon-container p {
+    font-size: 17px;
+    color: #4b4949;
+}
+.checkout-container .checkout-forms .coupon-and-order .coupon-container .input-button {
+    display: flex;
+    margin-top: 30px;
+}
+.checkout-container .checkout-forms .coupon-and-order .coupon-container .input-button input {
+    width: 60%;
+    height: 50px;
+    border: 1px solid #c9c5c5;
+    border-radius: 5px;
+    font-size: 17px;
+    padding-left: 10px;
+    color: #363535;
+}
+.checkout-container .checkout-forms .coupon-and-order .coupon-container .input-button input:focus {
+    border: none;
+    outline: 1px solid rgb(218, 90, 218);
+}
+.checkout-container .checkout-forms .coupon-and-order .coupon-container .input-button button {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(218, 90, 218);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-left: -8px;
+}
+.checkout-container .checkout-forms .coupon-and-order .coupon-container .input-button button:hover {
+    background-color: rgb(211, 10, 211);
+    box-shadow: 0 0 15px 2px rgb(85, 84, 84);
+}
+.checkout-container .checkout-forms .coupon-and-order .your-order {
+    margin-top: 50px;
+}
+.checkout-container .checkout-forms .coupon-and-order .your-order .your-order-container {
+    border: 1px solid #c9c5c5;
+    padding: 40px 50px;
+}
+.coupon-and-order .your-order .your-order-container .order-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd9d9;
+}
+.coupon-and-order .your-order .your-order-container .last {
+    border-bottom: none;
+}
+.coupon-and-order .your-order .your-order-container .order-details p {
+    margin-right: 80px;
+}
+            /* pay method */
+.coupon-and-order .your-order .your-order-container .pay-method {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #c5c1c1;
+    margin-top: 20px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+.coupon-and-order .your-order .your-order-container .first-method {
+    margin-top: 60px;
+}
+.coupon-and-order .your-order .your-order-container .pay-method a {
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(207, 93, 207);
+}
+.coupon-and-order .your-order .your-order-container .pay-method a:hover {
+    color: rgb(209, 20, 209);
+}
+.coupon-and-order .your-order .your-order-container button {
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    background-color: rgb(218, 90, 218);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+.coupon-and-order .your-order .your-order-container button:hover {
+    background-color: rgb(211, 10, 211);
+    box-shadow: 0 0 15px 2px rgb(85, 84, 84);
+    transform: translatey(-3px);
+}
+            /* footer */
+footer {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container {
+    width: 1100px;
+    height: 500px;
+}
+.footer-4-lists {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-4-lists h2 {
+    color: #2e2d2d;
+    margin-bottom: 20px;
+}
+            /* Navigations */
+.footer-navigations {
+    width: 45%;
+}
+.footer-navigations-3-lists {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-navigations-3-lists ul {
+    list-style-type: none;
+}
+.footer-navigations-3-lists ul li a {
+    color: #8b8787;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 2;
+}
+.footer-navigations-3-lists ul li a:hover {
+    color: rgb(211, 10, 211);
+}
+            /* Promo */
+.footer-promo {
+    width: 20%;
+}
+.footer-promo img {
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.footer-promo a{
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    color: rgb(224, 104, 224);
+    line-height: 2;
+}
+.footer-promo a:hover {
+    color: rgb(211, 10, 211);
+}
+.footer-promo p {
+    color: #8b8787;
+}
+            /* contact */
+.footer-contact-subscribe {
+    width: 25%;
+}
+.contact-info address ul {
+    margin-top: 25px;
+}
+.contact-info address ul li {
+    display: flex;
+    margin-bottom: 20px;
+}
+.contact-info address ul li i {
+    margin-right: 15px;
+    font-size: 17px;
+    color: rgb(224, 104, 224);
+}
+.contact-info address ul li p {
+    color: #5e5b5b;
+    font-size: 17px;
+    line-height: 1.2;
+}
+            /* Subscribe */
+.subscribe {
+    margin-top: 40px;
+}
+.subscribe form {
+    position: relative;
+}
+.subscribe .email-input {
+    width: 95%;
+    height: 52px;
+    padding-left: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 0.5px solid rgb(179, 175, 175);
+    color: #313030;
+}
+.subscribe .email-input:focus {
+    outline: 1px solid rgb(206, 24, 206);
+}
+.subscribe .btn-send {
+    width: 80px;
+    height: 45px;
+    position: absolute;
+    right: 17px;
+    top: 3.5px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    background-color: rgb(224, 104, 224);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.subscribe .btn-send:hover {
+    background-color: rgb(211, 10, 211);
+    box-shadow: 0 0 10px rgb(85, 84, 84);
+}
+            /* copyright */
+.footer-copyright {
+    text-align: center;
+    margin-top: 90px;
+}
+.footer-copyright p {
+    color: #949393;
+}
+.footer-copyright p a {
+    color: rgb(224, 104, 224);
+    text-decoration: none;
+    font-size: 20px;
+}
+.footer-copyright p a:hover {
+    color: rgb(223, 9, 223);
+    text-shadow: 2px 2px 1px rgb(173, 173, 173);
+}
